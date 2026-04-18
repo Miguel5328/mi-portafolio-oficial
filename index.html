@@ -1,82 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Foxy | Dev</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foxy | Dev</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+<!-- LOGO -->
+<div class="logo-top">
+  <img src="img/icon.png" alt="logo">
+</div>
+
+<!-- NAV -->
 <nav>
-  <h1>FoxyDev</h1>
-  <div>
+  <h3>FoxyDev</h3>
+  <div class="nav-links">
     <a href="#sobre">Sobre mí</a>
     <a href="#servicios">Servicios</a>
     <a href="#exp">Experiencia</a>
-    <a href="#trabajos">Trabajos</a>
+    <a href="#icon">icon</a>
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <h2>Configurador de Servidores Minecraft ⚡</h2>
   <p>Setups profesionales • Optimización • Tebex</p>
 
-  <div class="botones">
-    <a href="https://discord.com/users/foxyestudios" target="_blank" class="btn discord">💬 Discord</a>
-    <a href="https://www.tiktok.com/@its_rony89" target="_blank" class="btn tiktok">🎵 TikTok</a>
-    <a href="https://www.instagram.com/its_rony84" target="_blank" class="btn instagram">📸 Instagram</a>
+  <div>
+    <a href="https://discord.com/users/foxyestudios" target="_blank" class="btn discord">Discord</a>
+    <a href="https://www.tiktok.com/@its_rony89" target="_blank" class="btn tiktok">TikTok</a>
+    <a href="https://www.instagram.com/its_rony84" target="_blank" class="btn instagram">Instagram</a>
   </div>
 </section>
 
+<!-- SOBRE -->
 <section id="sobre" class="card anim">
   <h2>Sobre mí</h2>
   <p>
     Soy Foxy, configurador de servidores de Minecraft con más de 3 años de experiencia.
-    Me especializo en setups completos, optimización de rendimiento (TPS) y sistemas de economía.
+    He trabajado en múltiples servidores ofreciendo setups completos, optimización de rendimiento (TPS)
+    y sistemas personalizados para mejorar la experiencia de juego.
   </p>
 
   <p class="info-extra">
     💼 +3 años de experiencia <br>
-    💳 Pagos principalmente a través de PayPal
+    💳 Pagos principalmente por PayPal
   </p>
 </section>
 
+<!-- SERVICIOS -->
 <section id="servicios" class="card anim">
   <h2>Servicios</h2>
 
   <p class="intro">
-    ¡Hola! Me presento, ofrezco servicios orientados a una experiencia de juego estable y única.
+    ¡Hola! me presento vengo a ofrecer mis servicios 🌟 Programación y configuración orientada
+    a ofrecer una experiencia de juego única y estable para tus usuarios
   </p>
 
   <div class="grid-servicios">
     <div class="servicio">
-      <h3>🏗️ Networks</h3>
-      <p>Proxys, lobbys y modalidades completas.</p>
+      <h3>🏗️ NETWORKS</h3>
+      <p>Diseño de proxys, lobbys y modalidades completas.</p>
     </div>
 
     <div class="servicio">
-      <h3>🔗 Java & Bedrock</h3>
+      <h3>🔗 JAVA & BEDROCK</h3>
       <p>Integración con Geyser y Floodgate.</p>
     </div>
 
     <div class="servicio">
-      <h3>⚔️ Sistemas</h3>
-      <p>KOTH, misiones, recompensas y más.</p>
+      <h3>⚔️ SISTEMAS</h3>
+      <p>Misiones, KOTH, recompensas, logros y rank-up. entre mas cosas</p>
     </div>
 
     <div class="servicio">
-      <h3>🛒 Tebex</h3>
-      <p>Tiendas, cupones y automatización.</p>
+      <h3>🛒 TEBEX</h3>
+      <p>Configuración de tiendas, cupones y automatización.</p>
     </div>
   </div>
 
   <div class="extra-info">
-    <p>📌 Contáctame por MD para más info</p>
+    <p>📌 Si necesitas algo no listado, contáctame por MD</p>
     <p>💰 Precios flexibles • 📨 Entrega rápida</p>
   </div>
 </section>
 
+<!-- EXPERIENCIA -->
 <section id="exp" class="card anim">
   <h2>Experiencia</h2>
   <p class="servers">
@@ -84,27 +99,23 @@
   </p>
 </section>
 
-<section id="trabajos" class="card anim">
-  <h2>Trabajos</h2>
+<!-- TRABAJOS -->
+<section id="icon" class="card anim">
+  <h2>Icon</h2>
   <div class="galeria">
     <img src="img/icon.png" onclick="abrirImagen(this)">
   </div>
 </section>
 
+<!-- MODAL -->
 <div id="modal" onclick="cerrarImagen()">
   <img id="imgGrande">
 </div>
 
-<section class="card anim">
-  <h2>Contacto</h2>
-  <p>Discord: foxyestudios</p>
-</section>
-
 <footer>
-  © 2026 FoxyDev
+© 2026 FoxyDev
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
